@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f4f7;
+  }
+  
+  /* Centering the Login Form */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Login Form Styling */
+  form {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-logo {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 120px;
+  }
+  
+  .form-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-header h2 {
+    color: #333;
+  }
+  
+  /* Input Styling */
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border 0.3s;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Password Field */
+  .password-field {
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 14px;
+    color: #007bff;
+  }
+  
+  /* Submit Button */
+  button[type="submit"] {
+    width: 100%;
+    background-color: #1887fd;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  /* Links Styling */
+  .forgot-password, .signup-link {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mobile Responsiveness */
+  @media screen and (max-width: 480px) {
+    form {
+      padding: 30px 20px;
+    }
+  
+    .login-logo {
+      max-width: 100px;
+    }
+  
+    button[type="submit"] {
+      font-size: 15px;
+    }
+  }
+  

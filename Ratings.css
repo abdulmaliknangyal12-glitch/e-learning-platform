@@ -1,0 +1,33 @@
+.ratings-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.rating-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.rating-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.rating-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.rating-card p {
+  margin: 0.25rem 0;
+}
+
+.text-yellow-400 {
+  color: #fbbf24;
+}
+
+.text-gray-300 {
+  color: #d1d5db;
+}

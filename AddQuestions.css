@@ -1,0 +1,69 @@
+.add-questions-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.add-questions-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 26px;
+  color: #333;
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 10px;
+}
+
+.question-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.question-box h4 {
+  margin-bottom: 15px;
+  color: #4caf50;
+  font-size: 20px;
+}
+
+.question-box input[type="text"],
+.question-box select {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+.question-box input[type="text"]:focus,
+.question-box select:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+form button[type="submit"] {
+  display: block;
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+}
+
+form button[type="submit"]:hover {
+  background-color: #43a047;
+}

@@ -1,0 +1,109 @@
+.certificate-requests-container {
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.certificate-requests-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.no-requests {
+  font-size: 1rem;
+  color: #666;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.styled-table thead {
+  background-color: #007bff;
+  color: white;
+  text-align: left;
+}
+
+.styled-table th, 
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: background 0.2s ease;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Status badges */
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-badge.issued {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.status-badge.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+/* Buttons */
+.approve-btn,
+.reject-btn {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-right: 8px;
+}
+
+.approve-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.approve-btn:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.reject-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.reject-btn:hover:not(:disabled) {
+  background-color: #c82333;
+}
+
+.approve-btn:disabled,
+.reject-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

@@ -1,0 +1,143 @@
+/* Page wrapper */
+.course-detail {
+  padding: 2rem;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Course title */
+.course-detail h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+/* Upload buttons */
+.upload-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.upload-buttons button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: none;
+  color: white;
+}
+
+.upload-lecture { background-color: #3b82f6; }
+.upload-quiz { background-color: #10b981; }
+.upload-assignment { background-color: #8b5cf6; }
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.tabs button {
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 0.375rem 0.375rem 0 0;
+  background-color: #f3f4f6;
+  color: #374151;
+  border: none;
+}
+
+.tabs button.active {
+  background: linear-gradient(90deg, #6366f1, #3b82f6);
+  color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+/* Week section */
+.week-section {
+  margin-bottom: 1.25rem;
+}
+
+.week-section h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #0f172a;
+}
+
+/* Lecture cards container: horizontal, scrollable on overflow */
+.lecture-cards {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+/* Individual lecture card */
+.lecture-card {
+  min-width: 220px;
+  background-color: #ffffff;
+  border-left: 4px solid #3b82f6;
+  border-radius: 0.5rem;
+  padding: 0.9rem;
+  box-shadow: 0 2px 6px rgba(15,23,42,0.06);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Title inside card */
+.lecture-card h4 {
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  color: #0f172a;
+}
+
+.lecture-card p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #6b7280;
+}
+
+/* Buttons inside lecture card */
+.lecture-card button {
+  display: block;
+  width: 100%;
+  padding: 0.35rem 0;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  border: none;
+}
+
+/* Specific styles for buttons (reuse classes used in JSX) */
+.btn-pdf { background-color: #3b82f6; }
+.btn-pdf:hover { filter: brightness(0.95); }
+
+.btn-video { background-color: #10b981; }
+.btn-delete { background-color: #ef4444; }
+.btn-delete:hover { filter: brightness(0.95); }
+
+.btn-quiz { background-color: #f59e0b; color: white; }
+.btn-assignment { background-color: #8b5cf6; color: white; }
+
+/* Assignment and quiz cards */
+.quiz-card, .assignment-card {
+  border-left: 4px solid;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.quiz-card { border-color: #10b981; background-color: #fcfff7; }
+.assignment-card { border-color: #8b5cf6; background-color: #fbf7ff; }

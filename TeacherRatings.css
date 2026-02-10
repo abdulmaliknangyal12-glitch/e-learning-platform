@@ -1,0 +1,88 @@
+/* Container */
+.ratings-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.ratings-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+/* Loading / Error message */
+.message {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 40px;
+  color: #555;
+}
+
+.message.error {
+  color: #e74c3c;
+}
+
+/* No ratings */
+.no-ratings {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #777;
+}
+
+/* Rating card */
+.rating-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.rating-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Course name */
+.course-name {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Stars */
+.stars {
+  margin-bottom: 15px;
+}
+
+.star {
+  font-size: 1.3rem;
+  color: #ccc;
+  margin-right: 3px;
+}
+
+.star.filled {
+  color: #f1c40f;
+}
+
+/* Review text */
+.review {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Student name */
+.student-name {
+  font-size: 0.95rem;
+  color: #888;
+  font-weight: 500;
+}

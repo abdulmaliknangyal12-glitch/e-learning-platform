@@ -1,0 +1,54 @@
+.enroll-student-container {
+  margin-left: 200px; /* Align beside sidebar */
+  padding: 40px;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.enroll-student-container h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #1f2937; /* gray-800 */
+}
+
+.enroll-form {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 500px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.enroll-form select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  transition: border-color 0.2s;
+}
+
+.enroll-form select:focus {
+  border-color: #3b82f6;
+  background-color: #fff;
+  outline: none;
+}
+
+.enroll-form button {
+  padding: 10px 18px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #10b981; /* green-500 */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.enroll-form button:hover {
+  background-color: #059669; /* green-600 */
+}

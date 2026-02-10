@@ -1,0 +1,82 @@
+/* Container */
+.teacher-courses {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  box-sizing: border-box;
+  margin-left: 240px; /* space for sidebar if any */
+  width: calc(100% - 240px); /* full width minus sidebar */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  justify-content: flex-start; /* always left */
+}
+
+.header h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+/* Back icon */
+.back-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #1f2937;
+  transition: color 0.2s;
+}
+
+.back-icon:hover {
+  color: #3b82f6; /* blue on hover */
+}
+
+/* Course list container */
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+/* Individual course card */
+.course-item {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1e3a8a;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.course-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background-color: #e0f2fe; /* light blue */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .teacher-courses {
+    margin-left: 0;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .course-list {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+  }
+}

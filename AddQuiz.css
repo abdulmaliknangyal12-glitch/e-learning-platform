@@ -1,0 +1,40 @@
+/* keep the index + actions aligned on a single row and fixed height */
+.question-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 8px;
+  min-height: 48px;          /* header stays fixed height */
+  border-bottom: 1px solid #eef2f7;
+}
+
+/* body contains textarea, options, answer - this grows and pushes things down */
+.question-body {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ensure textarea sits below header, full width */
+.textarea {
+  min-height: 72px;
+  resize: vertical;
+}
+
+/* options grid + answer row unchanged but space below header now only moves */
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* small screens: keep same behavior */
+@media (max-width: 860px) {
+  .question-top {
+    min-height: 44px;
+    padding-bottom: 6px;
+  }
+  .options-grid { grid-template-columns: 1fr; }
+}

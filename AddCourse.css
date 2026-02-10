@@ -1,0 +1,50 @@
+/* src/styles/AddCourse.css */
+.add-course-container {
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.add-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.add-course-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.add-course-form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.add-course-form input,
+.add-course-form select,
+.add-course-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.add-course-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}

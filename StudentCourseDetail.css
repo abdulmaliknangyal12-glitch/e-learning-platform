@@ -1,0 +1,22 @@
+.course-detail {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.content-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-card h4 {
+  margin: 0;
+}

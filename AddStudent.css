@@ -1,0 +1,101 @@
+/* pages/AddStudent.css */
+.add-student-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: sans-serif;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.back-button {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.profile-pic {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.icon {
+  font-size: 40px;
+}
+
+.student-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.student-form input,
+.student-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-button {
+  background: #2e74ff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.profile-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-circle {
+  width: 120px;
+  height: 120px;
+  background-color: #f3f3f3;
+  border: 2px dashed #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.profile-circle span {
+  font-size: 40px;
+  color: #999;
+}
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-label {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+}

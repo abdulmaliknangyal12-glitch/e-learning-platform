@@ -1,0 +1,136 @@
+/* ActiveCourses.css */
+
+.active-courses-page {
+  max-width: 1100px;
+  margin: 28px auto;
+  padding: 20px;
+  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+  color: #222;
+}
+
+.active-courses-page h2 {
+  margin: 0 0 18px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #111;
+}
+
+.active-courses-page p {
+  color: #555;
+  line-height: 1.45;
+}
+
+/* Grid */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 14px;
+}
+
+/* Card */
+.course-card {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+  min-height: 150px;
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(16, 24, 40, 0.08);
+}
+
+.course-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #0b4d8c;
+}
+
+.course-card p {
+  margin: 0 0 10px;
+  color: #444;
+  font-size: 14px;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Duration */
+.course-card span {
+  display: block;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.actions button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: #0b74d1;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 120ms ease, transform 120ms ease;
+  min-width: 84px;
+}
+
+.actions button:hover {
+  transform: translateY(-2px);
+  background: #095ea8;
+}
+
+.actions button:nth-child(2) {
+  background: #f3f6fb;
+  color: #0b4d8c;
+  border-color: #e6eefb;
+}
+
+.actions button:nth-child(2):hover {
+  background: #e9f1fb;
+}
+
+/* Empty state */
+.active-courses-page > p {
+  margin-top: 12px;
+  font-size: 15px;
+  color: #666;
+}
+
+/* Loading */
+.active-courses-page .loading {
+  padding: 28px;
+  text-align: center;
+  color: #555;
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .active-courses-page {
+    padding: 14px;
+  }
+  .course-card {
+    padding: 12px;
+  }
+  .actions {
+    justify-content: space-between;
+  }
+  .actions button {
+    flex: 1;
+  }
+}

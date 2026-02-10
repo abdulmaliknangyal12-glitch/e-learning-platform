@@ -1,0 +1,75 @@
+.add-lecture-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form select,
+form input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.lecture-weeks {
+  margin-top: 30px;
+}
+
+.lecture-week-card {
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.lecture-week-card h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #007bff;
+}
+
+.lecture-week-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lecture-week-card li {
+  margin: 5px 0;
+  font-size: 14px;
+}

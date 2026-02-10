@@ -1,0 +1,45 @@
+.admin-dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 60px 20px;
+  justify-content: center;
+  align-items: flex-start;
+  
+  min-height: 100vh;
+  background-image: url('/images/dash.png'); /* Don't use "public" in the path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.dashboard-card {
+  background-color: #dceeff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: left;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+  transform: scale(1.03);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.dashboard-card p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0077cc;
+  margin: 0;
+}

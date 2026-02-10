@@ -1,0 +1,114 @@
+/* Global background */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('/images/dash.png') center/cover no-repeat fixed;
+  color: #214dec;
+  display: flex;
+}
+
+/* Layout Wrapper */
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #2c3e50;
+  height: 100vh; /* fixed full height */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: fixed;   /* keep it fixed */
+  top: 0;
+  left: 0;
+}
+
+.sidebar h3 {
+  color: white;
+  margin: 0 0 20px 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  color: white;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.sidebar li:hover {
+  color: #3498db;
+}
+
+/* Content Wrapper */
+.dashboard-content {
+  margin-left: 220px; /* leave space for fixed sidebar */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: calc(100% - 220px);
+}
+
+/* Navbar + Main Content */
+.content-area {
+  flex: 1;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.content-area h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+  color: #000000;
+}
+
+/* Cards Section */
+.cards {
+  display: flex;
+  flex-wrap: wrap; /* ✅ wrap if too many */
+  
+}
+
+.card {
+  background-color: #3c82f6;
+  border-radius: 12px;
+  padding: 25px;
+  width: 220px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: #000000;
+}
+
+/* Footer / Impact Message */
+.impact-message {
+  padding: 20px 30px;
+  font-size: 14px;
+  color: #ffffffcc;
+  text-align: center;
+}

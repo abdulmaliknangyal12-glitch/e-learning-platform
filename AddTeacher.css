@@ -1,0 +1,176 @@
+.add-teacher-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ✅ Center heading and form */
+}
+
+.add-teacher-container h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+
+.add-teacher-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: 600;
+  color: #444;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="file"] {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+input[type="file"] {
+  padding: 5px;
+  font-size: 13px;
+}
+
+.preview-box {
+  margin-top: 10px;
+}
+
+.preview-box p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.preview-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+}
+
+.qualifications-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.qualification-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.remove-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #d32f2f;
+}
+
+.add-qualification-btn {
+  background-color: #1976d2;
+  color: white;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.add-qualification-btn:hover {
+  background-color: #125ea9;
+}
+
+.submit-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #388e3c;
+}
+
+/* Responsive support */
+@media screen and (max-width: 600px) {
+  .add-teacher-container {
+    padding: 15px 20px;
+  }
+
+  .preview-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .remove-btn,
+  .add-qualification-btn,
+  .submit-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+.profile-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.profile-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.default-icon {
+  font-size: 120px;
+  color: #ccc;
+}
+
+.upload-text {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}

@@ -1,0 +1,96 @@
+/* src/pages/Teacher/StudentProgress.css */
+
+.student-progress {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  background-color: #f3f4f6; /* light gray */
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #1f2937;
+}
+
+/* Card Styling */
+.card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 0.25rem;
+}
+
+/* Overall Card Highlight */
+.card.overall {
+  background-color: #eff6ff;
+  color: #1e3a8a;
+}
+
+.overall-percent {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.ids {
+  font-size: 0.85rem;
+  color: #1e3a8a;
+}
+
+/* Progress Bar Styling */
+.progress-bar-container {
+  width: 100%;
+  height: 0.5rem;
+  background-color: #e5e7eb;
+  border-radius: 0.25rem;
+  margin-top: 0.5rem;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #3b82f6;
+  border-radius: 0.25rem 0 0 0.25rem;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
